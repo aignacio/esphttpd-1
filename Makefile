@@ -31,11 +31,11 @@ FW_BASE		= firmware
 XTENSA_TOOLS_ROOT ?= 
 
 # base directory of the ESP8266 SDK package, absolute
-SDK_BASE	?= /opt/Espressif/ESP8266_SDK
+SDK_BASE	?= /opt/Espressif/esp-open-sdk
 
 # Opensdk patches stdint.h when compiled with an internal SDK. If you run into compile problems pertaining to
 # redefinition of int types, try setting this to 'yes'.
-USE_OPENSDK?=no
+USE_OPENSDK?=yes
 
 #Esptool.py path and port
 ESPTOOL		?= esptool.py
